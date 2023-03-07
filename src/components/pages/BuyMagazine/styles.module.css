@@ -22,7 +22,7 @@
   line-height: 120%;
   text-align: center;
   letter-spacing: -0.008em;
-  color: #0b2110;
+  color: #e27c23;
 }
 .timePeriods {
   background: #ffffff;
@@ -89,6 +89,7 @@
 .cardWrapper {
   display: grid;
   grid-template-columns: repeat(3, 300px);
+
   justify-content: center;
   padding-top: 80px;
   gap: 15px;
@@ -200,16 +201,35 @@
 @media only screen and (max-width: 991px) {
   .cardWrapper {
     grid-template-columns: 400px;
+    padding-top: 20px;
   }
   .recomendedCard {
     margin-top: 50px;
   }
 }
 @media only screen and (max-width: 520px) {
+  .save {
+    right: -80px;
+    top: -40%;
+  }
+  .timePeriods::after {
+    transform: rotate(-40deg);
+    top: 10px;
+    right: -50px;
+  }
   .cardWrapper {
     grid-template-columns: 294.75px;
   }
   .recomendedCard {
     margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .heading {
+    font-size: 36px;
+  }
+  .save {
+    right: -40px;
+    top: -44%;
   }
 }

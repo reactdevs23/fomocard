@@ -7,8 +7,8 @@ import "./Navbar.css";
 const Menu = () => {
   const menus = [
     {
-      name: "Buy FOMO Magazine",
-      link: "https://www.hel.io/",
+      name: "Buy Magazine",
+      link: "/buyMagazine",
     },
     {
       name: "Youtube",
@@ -103,14 +103,14 @@ const Menu = () => {
                     </li>
                     {menus.map((menu, index) => (
                       <li className="nav-item" key={index}>
-                        <a
+                        <Link
                           className="text-decoration-none"
                           target="_blank"
                           rel="noreferrer"
-                          href={menu.link}
+                          to={menu.link}
                         >
                           {menu.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
 
