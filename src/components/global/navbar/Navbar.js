@@ -36,15 +36,15 @@ const Menu = () => {
                   </Link>
                 </li>
                 {menus.map((menu, index) => (
-                  <li className="nav-item" key={index}>
-                    <a
+                  <li className="nav-item" key={index} onClick={handleClose}>
+                    <Link
                       className="text-decoration-none"
                       target="_blank"
                       rel="noreferrer"
-                      href={menu.link}
+                      to={menu.link}
                     >
                       {menu.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
 
@@ -96,13 +96,17 @@ const Menu = () => {
               <Offcanvas.Body>
                 <nav id="mobile-nav">
                   <ul className="mobile-nav-ul">
-                    <li className="nav-item">
+                    <li className="nav-item" onClick={handleClose}>
                       <Link className="text-decoration-none" to="/">
                         Home
                       </Link>
                     </li>
                     {menus.map((menu, index) => (
-                      <li className="nav-item" key={index}>
+                      <li
+                        className="nav-item"
+                        key={index}
+                        onClick={handleClose}
+                      >
                         <Link
                           className="text-decoration-none"
                           target="_blank"
