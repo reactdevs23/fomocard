@@ -54,6 +54,7 @@ const Menu = () => {
                       className="text-decoration-none"
                       style={{ color: "white" }}
                       to="/buyMagazine"
+                      target="_blank"
                     >
                       Buy Magazine
                     </Link>
