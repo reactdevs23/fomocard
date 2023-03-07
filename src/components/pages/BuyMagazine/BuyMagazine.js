@@ -7,7 +7,7 @@ const BuyMagazine = () => {
       title: "Starter",
       youWillGet: ["Get 3 Physical Magazine", "Free Digital Copy "],
       price: 1.2,
-      to: "#",
+      to: "https://www.hel.io/x/FOMOmag1",
     },
     {
       recomended: true,
@@ -18,7 +18,7 @@ const BuyMagazine = () => {
         "Wall hanging NFT Poster",
       ],
       price: 1.5,
-      to: "#",
+      to: "https://www.hel.io/x/FOMOmag1",
     },
     {
       title: "Professional",
@@ -29,7 +29,7 @@ const BuyMagazine = () => {
         "1/1 ART copy",
       ],
       price: 1.8,
-      to: "#",
+      to: "https://www.hel.io/x/FOMOmag1",
     },
   ];
   const yearlyPricing = [
@@ -37,7 +37,7 @@ const BuyMagazine = () => {
       title: "Starter",
       youWillGet: ["Get 3 Physical Magazine", "Free Digital Copy "],
       price: 2.2,
-      to: "#",
+      to: "https://www.hel.io/x/FOMOmag1",
     },
     {
       recomended: true,
@@ -48,7 +48,7 @@ const BuyMagazine = () => {
         "Wall hanging NFT Poster",
       ],
       price: 3.5,
-      to: "#",
+      to: "https://www.hel.io/x/FOMOmag1",
     },
 
     {
@@ -60,7 +60,7 @@ const BuyMagazine = () => {
         "1/1 ART copy",
       ],
       price: 10.8,
-      to: "#",
+      to: "https://www.hel.io/x/FOMOmag1",
     },
   ];
 
@@ -70,7 +70,8 @@ const BuyMagazine = () => {
     <div className={styles.pricingContainer}>
       <div className={`${styles.wrapper} container`}>
         <h3 className={styles.heading}>
-          We offer great price plan for the fomo magazine
+          We offer great <span className={styles.color}>price</span> plan for
+          the fomo magazine
         </h3>
         <div className={styles.timePeriods}>
           <div
@@ -122,7 +123,12 @@ const BuyMagazine = () => {
 
               <div className={styles.buttonAndPrice}>
                 <h5 className={styles.price}>{el.price} SOL</h5>
-                <a href={el.to} className={styles.button}>
+                <a
+                  href={el.to}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.button}
+                >
                   Get Started
                 </a>
               </div>
