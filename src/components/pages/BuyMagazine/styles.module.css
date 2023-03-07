@@ -82,7 +82,7 @@
 }
 .cardWrapper {
   display: grid;
-  grid-template-columns: repeat(3, 294.75px);
+  grid-template-columns: repeat(3, 300px);
   justify-content: center;
   padding-top: 80px;
   gap: 15px;
