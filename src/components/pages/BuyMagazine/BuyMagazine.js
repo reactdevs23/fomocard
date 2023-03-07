@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
-const Pricing = () => {
+const BuyMagazine = () => {
   const [yearly, setYearly] = useState(false);
   const quaterlyPricing = [
     {
@@ -133,4 +133,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default BuyMagazine;

@@ -1,7 +1,6 @@
 import React from "react";
 
 import Hero from "./Hero/Hero";
-import Pricing from "./Pricing/Pricing";
 
 import Subscribe from "./Subscribe/Subscribe";
 import Trust from "./Trust/Trust";
@@ -11,7 +10,7 @@ const Home = () => {
     <div>
       <Hero />
       <Trust />
-      <Pricing />
+
       <Subscribe />
     </div>
   );

@@ -16,7 +16,7 @@ const Menu = () => {
     },
   ];
   const [show, setShow] = useState(false);
-  
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -50,12 +50,15 @@ const Menu = () => {
 
                 <li>
                   <button className="nav-subscribe-btn effect">
-                    <a 
-                    className="text-decoration-none"
-        
-        style={{color : "white"}}
-        href="https://www.hel.io/" target="_blank" rel="noreferrer">Buy Magazine</a>
-                    
+                    <Link
+                      className="text-decoration-none"
+                      style={{ color: "white" }}
+                      to="/buyMagazine"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Buy Magazine
+                    </Link>
                   </button>
                 </li>
               </ul>
