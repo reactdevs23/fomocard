@@ -1,11 +1,15 @@
 .pricingContainer {
+  width: 100%;
+  padding: 100px 0;
+  padding-top: 80px;
+  background: #f7f7f7;
+}
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
-  padding-top: 80px;
-  background: #f7f7f7;
+  width: 100%;
 }
 .heading {
   max-width: 646px;
@@ -82,10 +86,11 @@
 }
 .cardWrapper {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;
   padding-top: 80px;
   gap: 15px;
+  width: 100%;
 }
 .card {
   background: #ffffff;
@@ -164,7 +169,7 @@
   font-size: 40px;
   line-height: 150%;
   text-align: center;
-  color: #0b2110;
+  color: #e27c23;
   padding: 30px 0;
   width: 100%;
 }
@@ -192,11 +197,13 @@
 }
 
 @media only screen and (max-width: 991px) {
-  .cardWrapper {
-    grid-template-columns: 400px;
-  }
   .recomendedCard {
     margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 794px) {
+  .cardWrapper {
+    grid-template-columns: 400px;
   }
 }
 @media only screen and (max-width: 520px) {

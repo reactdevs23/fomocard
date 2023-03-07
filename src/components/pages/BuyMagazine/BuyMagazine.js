@@ -61,13 +61,24 @@ const BuyMagazine = () => {
       price: 5.8,
       to: "#",
     },
+    {
+      title: "LifeTime",
+      youWillGet: [
+        "Get 3 Physical Magazine",
+        "Free Digital Copy",
+        "Wall hanging NFT Poster",
+        "1/1 ART copy",
+      ],
+      price: 10.8,
+      to: "#",
+    },
   ];
 
   const [pricing, setPricing] = useState(quaterlyPricing);
 
   return (
-    <div className="Container">
-      <div className={styles.pricingContainer}>
+    <div className={styles.pricingContainer}>
+      <div className={`${styles.wrapper} container`}>
         <h3 className={styles.heading}>
           We offer great price plan for the fomo magazine
         </h3>
@@ -93,7 +104,7 @@ const BuyMagazine = () => {
           <p className={styles.save}>SAVE UP TO 55%</p>
         </div>
 
-        <div className={styles.cardWrapper}>
+        <div className={`${styles.cardWrapper} `}>
           {pricing.map((el, i) => (
             <div
               key={i}

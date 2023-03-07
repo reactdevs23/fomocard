@@ -115,7 +115,17 @@ const Menu = () => {
                     ))}
 
                     <li>
-                      <button className="nav-subscribe-btn ">Subscribe</button>
+                      <button className="nav-subscribe-btn ">
+                        {" "}
+                        <Link
+                          className="text-decoration-none"
+                          style={{ color: "white" }}
+                          to="/buyMagazine"
+                          target="_blank"
+                        >
+                          Buy Magazine
+                        </Link>
+                      </button>
                     </li>
                   </ul>
                 </nav>
