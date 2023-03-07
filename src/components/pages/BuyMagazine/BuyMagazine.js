@@ -50,17 +50,7 @@ const BuyMagazine = () => {
       price: 3.5,
       to: "#",
     },
-    {
-      title: "Professional",
-      youWillGet: [
-        "Get 3 Physical Magazine",
-        "Free Digital Copy",
-        "Wall hanging NFT Poster",
-        "1/1 ART copy",
-      ],
-      price: 5.8,
-      to: "#",
-    },
+
     {
       title: "LifeTime",
       youWillGet: [
